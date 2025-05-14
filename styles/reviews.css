@@ -1,38 +1,32 @@
 .reviews {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .review {
-    width: 25%;
+    width: 22.5%;
     padding: 1.5rem;
     border-radius: 30px;
-    /* display: grid;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "review-content"
-        "review-img"; */
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+
 }
 
 .review-content {
-    /* grid-area: review-content; */
     padding: .5rem;
     text-align: center;
     line-height: 1.5;
 }
 
 .reviews-img {
-    /* grid-area: review-img; */
-    /* height: 10rem;
-    width: 12rem; */
-    height: 20%;
-    width: 12rem;
+    height: 8em;
+    width: 80%;
     object-fit:cover;
-    /* place-self: end; */
-    /* align-self: center; */
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 
