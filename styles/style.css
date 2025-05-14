@@ -12,15 +12,23 @@ header, nav, footer {
     text-align: center;
 }
 
-/* Navigation styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     margin: 0 15px;
 }
 
