@@ -34,7 +34,7 @@ main {
     padding: 20px;      
 }
 
-.gallery img {
+.gallery-img {
     width: 200px;
     margin: 10px;
     border-radius: 8px;
