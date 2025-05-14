@@ -1,61 +1,72 @@
-/* General styles for each fun-fact section */
-section.fun-fact {
-    background: #fff;
-    border-left: 5px solid #ffb6b6; /* Light pinkish border */
-    padding: 15px;
-    margin-bottom: 20px; /* Adds some space between sections */
-    border-radius: 5px; /* Optional: for rounded corners */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+/* Main layout container */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
-/* Remove default list styling if needed */
-section.fun-fact ul {
-    list-style-type: none;
-    padding-left: 0;
+/* Section container with white background */
+.fun-fact {
+    width: 80%;
+    padding: 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Changed to white */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Common styling for list items with class "fact-item" */
-section.fun-fact li.fact-item {
-    padding: 10px 15px; /* Add some padding inside list items */
-    margin-bottom: 10px; /* Space between list items */
-    border-radius: 4px; /* Optional: for rounded corners on list items */
+/* Section title */
+.fun-fact h3 {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-/* Individual styles for each list item using :nth-child() */
-/* You can choose any colors you like! */
-
-section.fun-fact ul li.fact-item:nth-child(1) {
-    background-color: #e0ffff; /* Light Cyan */
-    border-left: 5px solid #40e0d0; /* Turquoise */
+/* Grid layout for the fact items – 3 columns */
+.fact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
-section.fun-fact ul li.fact-item:nth-child(2) {
-    background-color: #fff0f5; /* Lavender Blush */
-    border-left: 5px solid #dda0dd; /* Plum */
+/* Each individual fact card with soft pink background */
+.fact-item {
+    background-color: #fff5f8; /* Soft pink */
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: -4px 0 0 0 #ffb6b6; /* Sharp pink shadow line */
+    text-align: center;
+    line-height: 1.5;
 }
 
-section.fun-fact ul li.fact-item:nth-child(3) {
-    background-color: #f0fff0; /* Honeydew */
-    border-left: 5px solid #90ee90; /* Light Green */
+/* Optional image styling */
+.facts-img {
+    height: 20%;
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 30px;
+    align-self: center;
 }
 
-section.fun-fact ul li.fact-item:nth-child(4) {
-    background-color: #fffacd; /* Lemon Chiffon */
-    border-left: 5px solid #ffd700; /* Gold */
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .fact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fun-fact {
+        width: 95%;
+    }
 }
 
-/* Optional: Style for the links within the sections if desired */
-section.fun-fact a {
-    color: #ff6347; /* Tomato color for links */
-    text-decoration: none;
+a {
+    color: #ffb6b6; /* Peach color */
+    text-decoration: none; /* Remove underline */
 }
 
-section.fun-fact a:hover {
-    text-decoration: underline;
-}
-
-/* Optional: Styling for the headings */
-section.fun-fact h3 {
-    margin-top: 0;
-    color: #333;
+a:hover {
+    color: #ff7f7f; /* Darker peach color on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
