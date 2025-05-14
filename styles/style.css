@@ -1,5 +1,22 @@
 @import url('https://drive.google.com/file/d/14hnSK_ipCKHsc_9Mxkmb1efxyjjvNPfh/view?usp=sharing');
 
+/* START TEST: Add grid to keep footer at the end */
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 3fr 10%;
+}
+header {
+    grid-row: 1;
+}
+main {
+    grid-row: 2;
+}
+footer {
+    grid-row: 3;
+}
+/* END TEST */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
