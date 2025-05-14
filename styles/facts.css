@@ -35,8 +35,8 @@ section.fun-fact ul li.fact-item:nth-child(2) {
 }
 
 section.fun-fact ul li.fact-item:nth-child(3) {
-    background-color: #f0fff0; /* Honeydew */
-    border-left: 5px solid #90ee90; /* Light Green */
+    background-color: #e7f1dc; /* Honeydew */
+    border-left: 5px solid hsl(94, 35%, 63%); /* Light Green */
 }
 
 section.fun-fact ul li.fact-item:nth-child(4) {
