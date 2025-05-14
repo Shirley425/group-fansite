@@ -1,0 +1,61 @@
+/* General styles for each fun-fact section */
+section.fun-fact {
+    background: #fff;
+    border-left: 5px solid #ffb6b6; /* Light pinkish border */
+    padding: 15px;
+    margin-bottom: 20px; /* Adds some space between sections */
+    border-radius: 5px; /* Optional: for rounded corners */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+
+/* Remove default list styling if needed */
+section.fun-fact ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Common styling for list items with class "fact-item" */
+section.fun-fact li.fact-item {
+    padding: 10px 15px; /* Add some padding inside list items */
+    margin-bottom: 10px; /* Space between list items */
+    border-radius: 4px; /* Optional: for rounded corners on list items */
+}
+
+/* Individual styles for each list item using :nth-child() */
+/* You can choose any colors you like! */
+
+section.fun-fact ul li.fact-item:nth-child(1) {
+    background-color: #e0ffff; /* Light Cyan */
+    border-left: 5px solid #40e0d0; /* Turquoise */
+}
+
+section.fun-fact ul li.fact-item:nth-child(2) {
+    background-color: #fff0f5; /* Lavender Blush */
+    border-left: 5px solid #dda0dd; /* Plum */
+}
+
+section.fun-fact ul li.fact-item:nth-child(3) {
+    background-color: #f0fff0; /* Honeydew */
+    border-left: 5px solid #90ee90; /* Light Green */
+}
+
+section.fun-fact ul li.fact-item:nth-child(4) {
+    background-color: #fffacd; /* Lemon Chiffon */
+    border-left: 5px solid #ffd700; /* Gold */
+}
+
+/* Optional: Style for the links within the sections if desired */
+section.fun-fact a {
+    color: #ff6347; /* Tomato color for links */
+    text-decoration: none;
+}
+
+section.fun-fact a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Styling for the headings */
+section.fun-fact h3 {
+    margin-top: 0;
+    color: #333;
+}
