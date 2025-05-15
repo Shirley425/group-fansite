@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Henny+Penny&family=Italiana&family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mystery+Quest&family=Pacifico&family=Ribeye&family=Ribeye+Marrow&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Xanh+Mono:ital@0;1&display=swap');
 
+/* START TEST: Add grid to keep footer at the end */
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 3fr 10%;
+}
+header {
+    grid-row: 1;
+}
+main {
+    grid-row: 2;
+}
+footer {
+    grid-row: 3;
+}
+/* END TEST */
+
 body {
     font-family: 'Italiana', sans-serif;
     margin: 0;
