@@ -1,100 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Henny+Penny&family=Italiana&family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mystery+Quest&family=Pacifico&family=Ribeye&family=Ribeye+Marrow&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Henny+Penny&family=Italiana&family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mystery+Quest&family=Pacifico&family=Quicksand:wght@300..700&family=Ribeye&family=Ribeye+Marrow&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Xanh+Mono:ital@0;1&display=swap');
 
-/* START TEST: Add grid to keep footer at the end */
+/* ========== Root Variables ========== */
+:root {
+    --blueberry: #5C2E91;
+    --chocolate: #3B1F1F;
+    --slate: #292D37;
+}
+
+/* ========== Global Styles ========== */
 body {
     display: grid;
     height: 100vh;
-    grid-template-rows: 15% 3fr 10%;
-}
-header {
-    grid-row: 1;
-}
-main {
-    grid-row: 2;
-}
-footer {
-    grid-row: 3;
-}
-/* END TEST */
-
-body {
-    font-family: 'Italiana', sans-serif;
+    grid-template-rows: 15% 3fr 12%;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--chocolate);
+    line-height: 1.6;
+    background: linear-gradient(0deg, rgba(254, 255, 255, 0.538) 82%, rgba(255, 252, 246, 0.674) 100%), url("https://iili.io/3gHzRmx.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
-    background: #fff8f0;
-    color: #333;
 }
 
-header, nav, footer {
-    background-color: #6ececc;
-    padding: 15px;
-    text-align: center;
-}
-
+/* ========== Header & Navigation ========== */
 header {
+    grid-row: 1;
+    background: linear-gradient(0deg, rgba(254, 255, 255, 0.467) 82%, rgba(255, 252, 246, 0.691) 100%), url('../assets/header-backgroung.jpg');
+    background-position: top;
+    background-size: cover;
+    padding: 1.5rem 6rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem 1.5rem 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.site-cake {
-    font-family: 'Abril Fatface', cursive;
-    color: #ac643b;
-    letter-spacing: 1px;
+header h1 {
+    display: flex;
+    align-items: center;
 }
 
-.site-verse {
-    font-family: 'Abril Fatface', sans-serif;
-    color: #8e5230;
-    font-weight: 700;
-    /* margin-left: 4px; optional: slight spacing between words */
+h1 img {
+    width: 5rem;
+    margin-right: 10px;
 }
-
-/* .site-title {
-    font-family: 'Pacifico', sans-serif;
-    font-size: 2.5rem;
-    color: #ac643b;
-    letter-spacing: 1px;
-} */
 
 .nav-links {
-    margin-left: auto;
+    display: flex;
+    gap: 2rem;
     list-style: none;
-    padding-right: 2 rem; /* Optional fine-tuning */
-    /* padding: 0; */
-    margin: 0;
-    display: flex;
-}
-
-.nav-links li {
-    font-family: 'Roboto Condensed', sans-serif;
-    display: flex;
-    flex-direction: row;
-    margin: 0 15px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #ac643b;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    padding: 0 0.5rem;
 }
 
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #8e5230;
+}
+
+/* ========== Typography ========== */
+.site-title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+
+.cake {
+    color: #ac643b;
+}
+
+.verse {
+    color: #8e5230;
+}
+
+#main-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    font-family: 'Abril Fatface', cursive;
+    color: var(--blueberry);
+}
+
+/* ========== Main Content ========== */
 main {
-    padding: 20px;      
+    grid-row: 2;
+    padding: 0 5rem;
 }
 
-.gallery-img {
-    width: 200px;
-    margin: 10px;
-    border-radius: 8px;
-}
-
-.fact, .review {
-    margin-bottom: 20px;
-    padding: 10px;
-    background: #fff;
-    border-left: 5px solid #ffb6b6;
+/* ========== Footer ========== */
+footer {
+    grid-row: 3;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    color: var(--slate);
+    line-height: 10px;
 }
