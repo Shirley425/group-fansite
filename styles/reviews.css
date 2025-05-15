@@ -1,32 +1,59 @@
+
+/* ========== Review Cards ========== */
 .reviews {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
 }
 
 .review {
-    width: 22.5%;
-    padding: 1.5rem;
-    border-radius: 30px;
+    width: 25%;
+    padding: 2rem 1.5rem;
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+    background-color: #f9fdfc;
+    border-left: 6px solid var(--pink-frost);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
 
+.review:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    background-image: url('https://cdn.pixabay.com/photo/2020/07/09/14/10/candy-5387481_1280.png');
+    background-position: bottom;
+    background-size: 8rem;
+    background-repeat: no-repeat;
 }
 
 .review-content {
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
-    line-height: 1.5;
+    color: var(--chocolate);
 }
 
+.review-content h3 {
+    font-family: 'Chicle', cursive;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    color: var(--blueberry);
+}
+
+.review-content p {
+    font-size: 0.95rem;
+}
+
+/* ========== Review Images ========== */
 .reviews-img {
     height: 8em;
     width: 80%;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.3);
 }
 
 
