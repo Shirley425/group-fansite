@@ -1,7 +1,7 @@
-@import url('https://drive.google.com/file/d/14hnSK_ipCKHsc_9Mxkmb1efxyjjvNPfh/view?usp=sharing');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Henny+Penny&family=Italiana&family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mystery+Quest&family=Pacifico&family=Ribeye&family=Ribeye+Marrow&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Xanh+Mono:ital@0;1&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Italiana', sans-serif;
     margin: 0;
     padding: 0;
     background: #fff8f0;
@@ -19,30 +19,41 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem 1.5rem 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.site-title {
-    font-family: 'Ballet', sans-serif;
-    font-size: 2.5rem;
-    color: #78586c;
+.site-cake {
+    font-family: 'Abril Fatface', cursive;
+    color: #ac643b;
     letter-spacing: 1px;
 }
 
-/* .ballet-<uniquifier> {
-    font-family: "Ballet", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.site-verse {
+    font-family: 'Abril Fatface', sans-serif;
+    color: #8e5230;
+    font-weight: 700;
+    /* margin-left: 4px; optional: slight spacing between words */
+}
+
+/* .site-title {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 2.5rem;
+    color: #ac643b;
+    letter-spacing: 1px;
 } */
 
 .nav-links {
+    margin-left: auto;
     list-style: none;
-    padding: 0;
+    padding-right: 2 rem; /* Optional fine-tuning */
+    /* padding: 0; */
     margin: 0;
     display: flex;
 }
 
 .nav-links li {
+    font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     flex-direction: row;
     margin: 0 15px;
@@ -50,7 +61,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #ac643b;
     font-weight: bold;
 }
 
