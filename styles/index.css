@@ -1,12 +1,20 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    height: fit-content;
+}
 
 main {
     display: flex;
-    position: relative; /* Needed for absolute positioning of image */
-    width: 100vw;
-    min-height: 100vh;
+    /* position: relative; Needed for absolute positioning of image */
+    /* width: 100vw; */
+    /* min-height: 100vh; */
     background-image: url("https://iili.io/3gHzRmx.jpg");
     background-position: center;
     background-size: cover;
+    padding-top: 0;
+    padding-right: 0;
 }
 
 .text-container {
@@ -14,7 +22,7 @@ main {
     padding: 2rem;
     min-width: 40%; /* Minimum half width */
     /* background: rgba(255, 255, 255, 0.8); Semi-transparent white */
-    overflow-y: auto; /* Scroll if content is too tall */
+    /* overflow-y: auto; Scroll if content is too tall */
     font-family: 'Italiana', cursive;
     color: #814b2c;
 }
@@ -32,12 +40,14 @@ main {
 }
 
 .image-wrapper {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    right: 0;
-    width: 40%;
-    height: 40%;
-    overflow: hidden;
+    right: 0; */
+    /* width: 40%; */
+    /* height: 40%; */
+    /* object-fit: contain; */
+    /* overflow: hidden; */
+    width: 30rem;
 }
 
 #home-img {
@@ -45,6 +55,7 @@ main {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-bottom-left-radius: 25%;
 }
 
 .background {
