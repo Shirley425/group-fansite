@@ -7,13 +7,6 @@
 
 main {
     display: flex;
-    /* position: relative; Needed for absolute positioning of image */
-    /* width: 100vw; */
-    /* min-height: 100vh; */
-    background-image: url("https://iili.io/3gHzRmx.jpg");
-    background-position: center;
-    background-size: cover;
-    padding-top: 0;
     padding-right: 0;
 }
 
