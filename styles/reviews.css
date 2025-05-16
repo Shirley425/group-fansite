@@ -1,5 +1,3 @@
-
-/* ========== Review Cards ========== */
 .reviews {
     display: flex;
     justify-content: space-around;
@@ -9,20 +7,22 @@
 }
 
 .review {
-    width: 25%;
-    padding: 2rem 1.5rem;
+    text-align: center;
+    color: var(--chocolate);
+    width: 22%;
+    padding: 2rem 2rem 3rem 2rem;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #f9fdfc;
     border-left: 6px solid #CEE8E0;
-    ;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .review:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
     box-shadow:rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;;
     background-image: url('https://cdn.pixabay.com/photo/2020/07/09/14/10/candy-5387481_1280.png');
     background-position: bottom;
@@ -30,13 +30,23 @@
     background-repeat: no-repeat;
 }
 
-.review-content {
-    padding: 0.5rem;
-    text-align: center;
-    color: var(--chocolate);
+.review.active {
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+                rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    background-image: url('https://cdn.pixabay.com/photo/2020/07/09/14/10/candy-5387481_1280.png');
+    background-position: bottom;
+    background-size: 8rem;
+    background-repeat: no-repeat;
 }
 
-.review-content h3 {
+.reviews:hover .review.active:not(:hover) {
+    transform: scale(1); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    background-image: none; 
+}
+
+.review h3 {
     font-family: 'Chicle', cursive;
     font-size: 1.25rem;
     font-weight: bold;
@@ -44,8 +54,8 @@
     color: var(--blueberry);
 }
 
-.review-content p {
-    font-size: 0.95rem;
+.review p {
+    font-size: 1rem;
 }
 
 .reviews-img {
