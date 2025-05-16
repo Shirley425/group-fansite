@@ -15,14 +15,15 @@
     display: flex;
     flex-direction: column;
     background-color: #f9fdfc;
-    border-left: 6px solid var(--pink-frost);
+    border-left: 6px solid #CEE8E0;
+    ;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .review:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+    box-shadow:rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;;
     background-image: url('https://cdn.pixabay.com/photo/2020/07/09/14/10/candy-5387481_1280.png');
     background-position: bottom;
     background-size: 8rem;
@@ -47,7 +48,6 @@
     font-size: 0.95rem;
 }
 
-/* ========== Review Images ========== */
 .reviews-img {
     height: 8em;
     width: 80%;
