@@ -16,8 +16,24 @@ main {
     min-width: 40%; /* Minimum half width */
     /* background: rgba(255, 255, 255, 0.8); Semi-transparent white */
     /* overflow-y: auto; Scroll if content is too tall */
-    font-family: 'Italiana', cursive;
+    font-family: 'Quicksand', sans-serif;;
+    color: #3b1f1f;
+}
+
+.headline {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2 rem;
     color: #814b2c;
+    letter-spacing: 1px;
+}
+
+.white-box {
+    background-color: #ffffff;
+    border-left: 5px solid #ffb6b6;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .content-wrapper {
