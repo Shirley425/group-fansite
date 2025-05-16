@@ -3,6 +3,9 @@ main {
     flex-direction: column;
     flex: 1;
     padding: 1rem;
+    background-image: url("https://iili.io/3gHzRmx.jpg");
+    background-position: center;
+    background-size: cover;
     box-sizing: border-box;
 }
 
@@ -12,7 +15,7 @@ main {
     background: rgb(255, 255, 253);
     padding: 10px;
     border: 1px solid #e0e0e0;
-    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1)) url('#sketch-border');
 }
 
 .gallery-img:hover {
